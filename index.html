@@ -23,19 +23,19 @@
     --gold-light:#E4D2A1;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; font-size:18px;}
   body{
     margin:0;
     background:var(--cream);
     color:var(--plum);
     font-family:'Cormorant Garamond', serif;
-    font-size:18px;
+    font-size:20px;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
   img{max-width:100%; display:block;}
   .eyebrow{
-    font-size:12.5px;
+    font-size:14px;
     letter-spacing:.22em;
     text-transform:uppercase;
     color:var(--sage);
@@ -73,19 +73,6 @@
       radial-gradient(ellipse 50% 40% at 8% 92%, rgba(126,139,98,0.32), transparent 60%),
       var(--cream);
   }
-  .hero-veins{
-    position:absolute; inset:0; width:100%; height:100%;
-    opacity:.55; pointer-events:none;
-  }
-  .hero-veins path{
-    fill:none; stroke:var(--gold); stroke-width:1.1;
-    stroke-dasharray:1400; stroke-dashoffset:1400;
-    animation:draw 3.2s ease-out forwards;
-  }
-  @media (prefers-reduced-motion: reduce){
-    .hero-veins path{animation:none; stroke-dashoffset:0;}
-  }
-  @keyframes draw{ to{ stroke-dashoffset:0; } }
 
   .sprig{position:absolute; width:120px; opacity:.9; pointer-events:none;}
   .sprig.tl{top:18px; left:8px; transform:rotate(-8deg);}
@@ -107,7 +94,7 @@
   }
   .date-pill{
     display:inline-block;
-    font-size:13px;
+    font-size:14.5px;
     letter-spacing:.16em;
     text-transform:uppercase;
     color:var(--plum);
@@ -132,7 +119,7 @@
     font-variant-numeric:tabular-nums;
   }
   .cd-label{
-    font-size:10.5px;
+    font-size:12px;
     letter-spacing:.14em;
     text-transform:uppercase;
     color:var(--sage);
@@ -142,7 +129,7 @@
 
   .scroll-hint{
     position:absolute; bottom:22px; left:0; right:0;
-    text-align:center; font-size:12px; letter-spacing:.18em;
+    text-align:center; font-size:13.5px; letter-spacing:.18em;
     text-transform:uppercase; color:var(--plum-soft); opacity:.7;
   }
 
@@ -168,7 +155,7 @@
   .gallery-grid figcaption{
     position:absolute; left:0; right:0; bottom:0;
     padding:.6rem .7rem .5rem;
-    font-style:italic; font-size:13.5px; color:#fff;
+    font-style:italic; font-size:15px; color:#fff;
     background:linear-gradient(to top, rgba(74,25,66,.78), transparent);
   }
   @media (max-width:760px){
@@ -196,14 +183,14 @@
     font-weight:400;
   }
   .detail-card p{margin:.25rem 0;}
-  .muted{color:var(--plum-soft); font-size:15.5px;}
+  .muted{color:var(--plum-soft); font-size:17px;}
   .directions-btn{
     display:inline-block;
     margin-top:1rem;
     padding:.55rem 1.3rem;
     border:1px solid var(--plum);
     border-radius:30px;
-    font-size:13px;
+    font-size:14.5px;
     letter-spacing:.08em;
     text-transform:uppercase;
     text-decoration:none;
@@ -230,10 +217,10 @@
   }
   .egypt-icon svg{width:38px; height:38px;}
   .egypt-icon h4{font-family:'Allura', cursive; font-weight:400; font-size:1.5rem; margin:0 0 .3rem; color:var(--plum-soft);}
-  .egypt-icon p{font-size:14.5px; color:var(--plum); margin:0; line-height:1.45;}
+  .egypt-icon p{font-size:16px; color:var(--plum); margin:0; line-height:1.45;}
   .egypt-note{
     text-align:center; max-width:480px; margin:0 auto; font-style:italic;
-    color:var(--plum-soft); font-size:15.5px; border-top:1px solid var(--gold-light); padding-top:1.4rem;
+    color:var(--plum-soft); font-size:17px; border-top:1px solid var(--gold-light); padding-top:1.4rem;
   }
   @media (max-width:760px){
     .egypt-icons{grid-template-columns:repeat(2, 1fr);}
@@ -250,11 +237,11 @@
   }
   .field{margin-bottom:1.3rem;}
   .field label{
-    display:block; font-size:12.5px; letter-spacing:.1em; text-transform:uppercase;
+    display:block; font-size:14px; letter-spacing:.1em; text-transform:uppercase;
     color:var(--sage); margin-bottom:.4rem;
   }
   .field input[type=text], .field input[type=number], .field textarea{
-    width:100%; font-family:'Cormorant Garamond', serif; font-size:16px;
+    width:100%; font-family:'Cormorant Garamond', serif; font-size:17.5px;
     padding:.55rem .7rem; border:1px solid var(--lavender-light);
     border-radius:4px; background:#fff; color:var(--plum);
   }
@@ -262,11 +249,11 @@
   .radio-row{display:flex; gap:1.3rem; flex-wrap:wrap;}
   .radio-row label{
     display:flex; align-items:center; gap:.45rem;
-    text-transform:none; letter-spacing:0; font-size:16px; color:var(--plum); cursor:pointer;
+    text-transform:none; letter-spacing:0; font-size:17.5px; color:var(--plum); cursor:pointer;
   }
   .submit-btn{
     width:100%; padding:.8rem; border:none; border-radius:30px;
-    background:var(--plum); color:var(--cream); font-size:15px;
+    background:var(--plum); color:var(--cream); font-size:16.5px;
     letter-spacing:.08em; text-transform:uppercase; cursor:pointer;
     transition:background .25s;
   }
@@ -277,7 +264,7 @@
     background:var(--cream-deep); border:1px solid var(--gold-light);
     border-radius:8px; padding:2.4rem 2rem; font-style:italic; font-size:1.15rem;
   }
-  #rsvpError{color:#9C3B3B; font-size:14px; margin-top:.6rem; text-align:center;}
+  #rsvpError{color:#9C3B3B; font-size:15.5px; margin-top:.6rem; text-align:center;}
 
   /* ---------- FOOTER ---------- */
   footer{
@@ -285,24 +272,12 @@
     border-top:1px solid var(--gold-light);
   }
   footer .footer-names{font-family:'Allura', cursive; font-size:2.4rem; color:var(--plum); display:block; margin:.3rem 0;}
-  footer .footer-meta{color:var(--plum-soft); font-size:14px; letter-spacing:.08em; text-transform:uppercase;}
-  .admin-link{
-    margin-top:2.2rem; font-size:12px; color:var(--lavender);
-    background:none; border:none; text-decoration:underline; cursor:pointer; letter-spacing:.04em;
-  }
-  #adminPanel{max-width:680px; margin:1.5rem auto 0; text-align:left; font-size:14px;}
-  #adminPanel table{width:100%; border-collapse:collapse;}
-  #adminPanel th, #adminPanel td{border-bottom:1px solid var(--gold-light); padding:.5rem .4rem; text-align:left; vertical-align:top;}
-  #adminPanel th{color:var(--sage); font-size:11px; letter-spacing:.08em; text-transform:uppercase;}
+  footer .footer-meta{color:var(--plum-soft); font-size:15.5px; letter-spacing:.08em; text-transform:uppercase;}
 </style>
 </head>
 <body>
 
 <section class="hero">
-  <svg class="hero-veins" viewBox="0 0 800 800" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0,90 C150,150 120,260 280,300 C420,335 380,460 560,480 C680,494 700,600 800,640" />
-    <path d="M800,30 C660,80 690,190 540,230 C400,268 430,380 260,400 C120,418 90,520 0,560" />
-  </svg>
   <svg class="sprig tl" viewBox="0 0 120 140" aria-hidden="true">
     <path d="M10,10 C40,40 35,70 60,100 C75,118 85,128 95,135" fill="none" stroke="#7E8B62" stroke-width="1.6"/>
     <ellipse cx="34" cy="38" rx="9" ry="4.5" fill="#B89BC9" opacity=".85" transform="rotate(40 34 38)"/>
@@ -465,10 +440,10 @@
   <h2 class="section-title">RSVP</h2>
   <p class="rsvp-intro">We can't wait to celebrate with you &mdash; let us know if you'll be there.</p>
 
-  <form id="rsvpForm" novalidate>
+  <form id="rsvpForm" action="https://formspree.io/f/mgojkrve" method="POST" novalidate>
     <div class="field">
       <label for="rName">Your name</label>
-      <input type="text" id="rName" name="rName" required>
+      <input type="text" id="rName" name="name" required>
     </div>
     <div class="field">
       <label>Will you join us?</label>
@@ -479,12 +454,13 @@
     </div>
     <div class="field">
       <label for="rGuests">Number of guests (incl. you)</label>
-      <input type="number" id="rGuests" name="rGuests" min="1" max="8" value="1">
+      <input type="number" id="rGuests" name="guests" min="1" max="8" value="1">
     </div>
     <div class="field">
       <label for="rMsg">Message to the couple (optional)</label>
-      <textarea id="rMsg" name="rMsg"></textarea>
+      <textarea id="rMsg" name="message"></textarea>
     </div>
+    <input type="hidden" name="_subject" value="New wedding RSVP">
     <button type="submit" class="submit-btn" id="rsvpSubmitBtn">Send RSVP</button>
     <div id="rsvpError"></div>
   </form>
@@ -496,8 +472,6 @@
   <p class="muted" style="font-style:italic;">With all our love,</p>
   <span class="footer-names">Tarek &amp; Reem</span>
   <p class="footer-meta">Cairo &middot; 7 January 2027</p>
-  <button class="admin-link" id="adminToggle" type="button">Couple's view: RSVP responses</button>
-  <div id="adminPanel" hidden></div>
 </footer>
 
 <script>
@@ -537,7 +511,7 @@
     document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('visible'); });
   }
 
-  // ---- RSVP submit ----
+  // ---- RSVP submit (Formspree) ----
   var form = document.getElementById('rsvpForm');
   form.addEventListener('submit', async function(ev){
     ev.preventDefault();
@@ -546,15 +520,15 @@
     var name = document.getElementById('rName').value.trim();
     if(!name){ errEl.textContent = 'Please enter your name.'; return; }
     var attending = form.querySelector('input[name="attending"]:checked').value;
-    var guests = document.getElementById('rGuests').value || '1';
-    var msg = document.getElementById('rMsg').value.trim();
     var btn = document.getElementById('rsvpSubmitBtn');
     btn.disabled = true; btn.textContent = 'Sending...';
-    var entry = { name:name, attending:attending, guests:guests, message:msg, ts:Date.now() };
-    var key = 'rsvp:' + Date.now() + '-' + Math.random().toString(36).slice(2,8);
     try{
-      var result = await window.storage.set(key, JSON.stringify(entry), true);
-      if(!result){ throw new Error('no result'); }
+      var resp = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      if(!resp.ok){ throw new Error('Formspree error ' + resp.status); }
       form.hidden = true;
       var thanks = document.getElementById('rsvpThanks');
       thanks.hidden = false;
@@ -566,47 +540,6 @@
       btn.disabled = false; btn.textContent = 'Send RSVP';
     }
   });
-
-  // ---- Admin: view RSVPs ----
-  var adminToggle = document.getElementById('adminToggle');
-  var adminPanel = document.getElementById('adminPanel');
-  var adminLoaded = false;
-  adminToggle.addEventListener('click', async function(){
-    if(!adminPanel.hidden){ adminPanel.hidden = true; return; }
-    adminPanel.hidden = false;
-    if(adminLoaded) return;
-    adminPanel.textContent = 'Loading responses...';
-    try{
-      var list = await window.storage.list('rsvp:', true);
-      if(!list || !list.keys || list.keys.length === 0){
-        adminPanel.textContent = 'No RSVPs yet.';
-        adminLoaded = true;
-        return;
-      }
-      var rows = [];
-      for(const k of list.keys){
-        try{
-          var r = await window.storage.get(k, true);
-          if(r && r.value){ rows.push(JSON.parse(r.value)); }
-        } catch(e){ /* skip unreadable entry */ }
-      }
-      rows.sort(function(a,b){ return (b.ts||0) - (a.ts||0); });
-      var html = '<table><thead><tr><th>Name</th><th>Reply</th><th>Guests</th><th>Message</th></tr></thead><tbody>';
-      rows.forEach(function(r){
-        html += '<tr><td>' + escHtml(r.name) + '</td><td>' + escHtml(r.attending) + '</td><td>' + escHtml(String(r.guests)) + '</td><td>' + escHtml(r.message||'') + '</td></tr>';
-      });
-      html += '</tbody></table>';
-      adminPanel.innerHTML = html;
-      adminLoaded = true;
-    } catch(err){
-      adminPanel.textContent = 'Could not load responses right now.';
-    }
-  });
-  function escHtml(s){
-    return String(s).replace(/[&<>"']/g, function(c){
-      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
-    });
-  }
 </script>
 </body>
 </html>
