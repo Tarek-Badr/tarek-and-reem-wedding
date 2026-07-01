@@ -127,6 +127,17 @@
   }
   .cd-done{font-style:italic; font-size:1.3rem; color:var(--plum);}
 
+  @media (max-width:500px){
+    .names{font-size:3.6rem;}
+    .invite-line{font-size:1.05rem;}
+    .date-pill{font-size:13px; letter-spacing:.10em;}
+    .cd-box{width:64px; padding:.6rem .2rem .5rem;}
+    .cd-num{font-size:1.6rem;}
+    .cd-label{font-size:11px;}
+    .hero-content{padding:0 1rem;}
+    .sprig{width:80px;}
+  }
+
   .scroll-hint{
     position:absolute; bottom:22px; left:0; right:0;
     text-align:center; font-size:15.5px; letter-spacing:.18em;
@@ -330,7 +341,7 @@
       <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-label">Secs</div></div>
     </div>
   </div>
-  <div class="scroll-hint">scroll &#9662;</div>
+  <div class="scroll-hint">keep scrolling &#9662;</div>
 </section>
 
 <div class="divider">
@@ -365,8 +376,7 @@
     <div class="detail-card">
       <h3>When</h3>
       <p><strong>Thursday, 7 January 2027</strong></p>
-      <p class="muted">Ceremony &mdash; 4:00 PM</p>
-      <p class="muted">Reception to follow</p>
+      <p class="muted">Starts at 4:00 PM</p>
       <button type="button" class="directions-btn" id="addCalendarBtn">Add to Calendar</button>
     </div>
     <div class="detail-card">
@@ -374,11 +384,10 @@
       <p><strong>Seasons Country Club</strong></p>
       <p class="muted">KM 28, Cairo&ndash;Alexandria Desert Road</p>
       <p class="muted">New Cairo, Cairo, Egypt</p>
-      <a class="directions-btn" href="https://www.google.com/maps/search/?api=1&query=Seasons+Country+Club+KM+28+Cairo+Alexandria+Desert+Road+New+Cairo+Egypt" target="_blank" rel="noopener">Get Directions</a>
+      <a class="directions-btn" href="https://www.google.com/maps/dir/?api=1&destination=Seasons+Country+Club+Km+28+Cairo+Alexandria+Desert+Road+Giza+Egypt&travelmode=driving" target="_blank" rel="noopener">Get Directions</a>
     </div>
     <div class="detail-card">
       <h3>Good to know</h3>
-      <p class="muted">A private celebration, shared by invitation only.</p>
       <p class="muted">Hotels, getting around, dress code, weather &mdash; it's all in the FAQ below.</p>
     </div>
   </div>
@@ -469,11 +478,11 @@
     </div>
     <div class="faq-card">
       <h3>Getting there</h3>
-      <p>Uber and Careem both work well throughout Cairo and are the easiest way to reach the venue. If you'd rather have a private driver for the day, let us know &mdash; we can recommend a trusted car company.</p>
+      <p>Uber works well throughout Cairo and is the easiest way to reach the venue. If you'd rather have a private driver for the day, let us know &mdash; we can recommend a trusted car company.</p>
     </div>
     <div class="faq-card">
       <h3>Dress code</h3>
-      <p>Garden formal, in soft romantic tones &mdash; think lavender, sage, dusty rose, ivory, and gold. We'll be saving the white for the bride!</p>
+      <p>Garden formal, in soft romantic tones &mdash; think lavender, sage, dusty rose, and gold. We'll be saving the white for the bride!</p>
     </div>
     <div class="faq-card">
       <h3>Weather</h3>
@@ -572,7 +581,7 @@
       'DTEND:20270107T210000Z',
       'SUMMARY:Tarek and Reem - Wedding',
       'LOCATION:Seasons Country Club - KM 28 Cairo-Alexandria Desert Road - New Cairo - Cairo - Egypt',
-      'DESCRIPTION:Ceremony at 4:00 PM - reception to follow.',
+      'DESCRIPTION:Wedding celebration starting at 4:00 PM.',
       'END:VEVENT',
       'END:VCALENDAR'
     ];
