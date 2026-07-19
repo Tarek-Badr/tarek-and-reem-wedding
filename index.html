@@ -250,6 +250,7 @@
     color:var(--plum-soft); margin:0 0 .5rem;
   }
   .faq-card p{margin:0; font-size:17px; line-height:1.5; color:var(--plum);}
+  .faq-card p + p{margin-top:.8rem;}
   @media (max-width:760px){
     .faq-grid{grid-template-columns:1fr;}
   }
@@ -341,7 +342,7 @@
       <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-label">Secs</div></div>
     </div>
   </div>
-  <div class="scroll-hint">keep scrolling &#9662;</div>
+  <div class="scroll-hint">keep scrolling</div>
 </section>
 
 <div class="divider">
@@ -376,19 +377,21 @@
     <div class="detail-card">
       <h3>When</h3>
       <p><strong>Thursday, 7 January 2027</strong></p>
-      <p class="muted">Starts at 4:00 PM</p>
+      <p class="muted">Guest arrival from 2:00 PM</p>
+      <p class="muted">Celebration begins shortly after</p>
+      <p class="muted">We recommend arriving on time to enjoy the full evening.</p>
       <button type="button" class="directions-btn" id="addCalendarBtn">Add to Calendar</button>
     </div>
     <div class="detail-card">
       <h3>Where</h3>
       <p><strong>Seasons Country Club</strong></p>
       <p class="muted">KM 28, Cairo&ndash;Alexandria Desert Road</p>
-      <p class="muted">New Cairo, Cairo, Egypt</p>
+      <p class="muted">Cairo, Egypt</p>
       <a class="directions-btn" href="https://www.google.com/maps/dir/?api=1&destination=Seasons+Country+Club+Km+28+Cairo+Alexandria+Desert+Road+Giza+Egypt&travelmode=driving" target="_blank" rel="noopener">Get Directions</a>
     </div>
     <div class="detail-card">
       <h3>Good to know</h3>
-      <p class="muted">Hotels, getting around, dress code, weather &mdash; it's all in the FAQ below.</p>
+      <p class="muted">Travel, accommodation, dress code, parking, children and plus-ones &mdash; it's all in the FAQ below.</p>
     </div>
   </div>
 </section>
@@ -473,8 +476,10 @@
   <h2 class="section-title">FAQ</h2>
   <div class="faq-grid">
     <div class="faq-card">
-      <h3>Hotels</h3>
-      <p>We have a few smaller celebrations here in New Cairo before the main day, so if you can, plan to be in town between <strong>2&ndash;8 January</strong>. Our recommended hotel is the <a href="https://www.booking.com/hotel/eg/landmark-new-cairo.de.html" target="_blank" rel="noopener">Helnan Landmark Hotel</a> in New Cairo. A bit more budget&#8209;friendly nearby: <a href="https://www.google.com/maps/place/?q=place_id:ChIJb_oXBWY9WBQRIUSZTdsFk_Y" target="_blank" rel="noopener">Royal Inn Residence</a>. Want something fancier? <a href="https://www.google.com/maps/place/?q=place_id:ChIJ01k5-GY9WBQRtkS-oeN0qlA" target="_blank" rel="noopener">Kempinski Palace Cairo</a> is a five&#8209;star option in the same area.</p>
+      <h3>Where should I stay?</h3>
+      <p>Cairo is a large and spread-out city, so location matters. Some smaller pre-wedding gatherings will take place around the New Administrative Capital / New Cairo area, while the wedding celebration will be closer to the Pyramids/Giza area.</p>
+      <p>For guests staying in New Cairo, <a href="https://www.booking.com/hotel/eg/landmark-new-cairo.de.html" target="_blank" rel="noopener">Helnan Landmark Hotel</a> is a convenient option. A more budget-friendly choice nearby is <a href="https://www.google.com/maps/place/?q=place_id:ChIJb_oXBWY9WBQRIUSZTdsFk_Y" target="_blank" rel="noopener">Royal Inn Residence</a>. If you&rsquo;re looking for something fancier, <a href="https://www.google.com/maps/place/?q=place_id:ChIJ01k5-GY9WBQRtkS-oeN0qlA" target="_blank" rel="noopener">Kempinski Palace Cairo</a> is a five-star option in the same area.</p>
+      <p>For the wedding night itself, staying closer to the Pyramids/Giza area may make the journey easier; Hyatt Regency Cairo West and Steigenberger Pyramids Cairo are options nearby.</p>
     </div>
     <div class="faq-card">
       <h3>Getting there</h3>
@@ -482,7 +487,19 @@
     </div>
     <div class="faq-card">
       <h3>Dress code</h3>
-      <p>Garden formal, in soft romantic tones &mdash; think lavender, sage, dusty rose, and gold. We'll be saving the white for the bride!</p>
+      <p>Garden formal. We kindly ask guests to avoid white, ivory, cream, champagne, and very pale shades that may photograph as white &mdash; we&rsquo;ll be saving those for the bride :).</p>
+    </div>
+    <div class="faq-card">
+      <h3>Children</h3>
+      <p>As much as we love your little ones, we kindly ask that our wedding celebration be limited to guests aged 12 and above. Thank you for understanding.</p>
+    </div>
+    <div class="faq-card">
+      <h3>Parking</h3>
+      <p>Parking is available at the venue. Please follow the venue staff&rsquo;s directions when you arrive.</p>
+    </div>
+    <div class="faq-card">
+      <h3>Plus ones</h3>
+      <p>Because of venue capacity, we kindly ask guests to attend with the people listed on their invitation.</p>
     </div>
     <div class="faq-card">
       <h3>Weather</h3>
@@ -539,9 +556,9 @@
 
 <script>
   // ---- Countdown ----
-  // 7 Jan 2027, 4:00 PM Cairo time (UTC+2) == 14:00 UTC. Using Date.UTC avoids
+  // 7 Jan 2027, 2:00 PM Cairo time (UTC+2) == 12:00 UTC. Using Date.UTC avoids
   // any cross-browser quirks with parsing ISO offset strings.
-  var target = Date.UTC(2027, 0, 7, 14, 0, 0);
+  var target = Date.UTC(2027, 0, 7, 12, 0, 0);
   function pad(n){ return String(n).padStart(2,'0'); }
   function tick(){
     var now = Date.now();
@@ -577,11 +594,11 @@
       'BEGIN:VEVENT',
       'UID:tarek-reem-wedding-2027-01-07@invite',
       'DTSTAMP:' + icsStamp(new Date()),
-      'DTSTART:20270107T140000Z',
+      'DTSTART:20270107T120000Z',
       'DTEND:20270107T210000Z',
       'SUMMARY:Tarek and Reem - Wedding',
-      'LOCATION:Seasons Country Club - KM 28 Cairo-Alexandria Desert Road - New Cairo - Cairo - Egypt',
-      'DESCRIPTION:Wedding celebration starting at 4:00 PM.',
+      'LOCATION:Seasons Country Club - KM 28 Cairo-Alexandria Desert Road - Cairo - Egypt',
+      'DESCRIPTION:Guest arrival from 2:00 PM. Celebration begins shortly after. Please arrive on time to enjoy the full evening.',
       'END:VEVENT',
       'END:VCALENDAR'
     ];
