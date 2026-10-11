@@ -94,7 +94,7 @@
   .sprig.tl{top:18px; left:8px; transform:rotate(-8deg);}
   .sprig.br{bottom:18px; right:8px; transform:rotate(178deg);}
 
-  .hero-content{position:relative; z-index:2; width:100%; max-width:640px;}
+  .hero-content{position:relative; z-index:2; width:100%; max-width:960px;}
   .language-link{
     position:absolute; top:20px; right:24px; z-index:3;
     display:inline-flex; align-items:center; justify-content:center;
@@ -106,9 +106,10 @@
   .language-link:hover{border-color:var(--plum);}
   .names{
     font-family:'Allura', cursive;
-    font-size:clamp(3rem, 8.8vw, 5.6rem);
+    font-size:clamp(30px, 11vw, 5.3rem);
     font-weight:400;
     line-height:1.18;
+    white-space:nowrap;
     margin:0 0 .6rem;
     color:var(--plum);
   }
@@ -159,7 +160,6 @@
 
   @media (max-width:500px){
     .hero{padding:5rem 20px 3.5rem;}
-    .names{font-size:clamp(2.5rem, 16vw, 3.6rem);}
     .invite-line{font-size:1.05rem;}
     .date-pill{font-size:13px; letter-spacing:.10em;}
     .countdown{gap:8px;}
